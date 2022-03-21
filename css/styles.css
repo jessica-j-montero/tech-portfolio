@@ -525,7 +525,7 @@ a:hover {
   grid-template-areas: "nav" "header" "main" "footer";
   grid-template-columns: 1fr;
 }
-.body__.header {
+.body .header {
   grid-area: header;
   background-color: #8ca0ff;
 }
@@ -631,20 +631,26 @@ a:hover {
     font-size: 0.5rem;
   }
   .nav-container .navbar .navbar--list .navbar--item {
-    padding: 0 2em;
+    padding-right: 4em;
     display: inline-block;
+  }
+  .nav-container .navbar .navbar--list .navbar--item:not(:last-of-type) {
+    padding-right: 0px;
   }
   .nav-container .navbar .navbar--list .navbar--link {
     font-size: 0.8rem;
     position: relative;
     font-weight: 400;
   }
+  .nav-container .navbar .navbar--list .navbar--link:hover {
+    color: #c96fcd;
+  }
   .nav-container .navbar .navbar--list .navbar--link::before {
     position: absolute;
     content: " ";
     left: 0;
     bottom: 0;
-    height: 4px;
+    height: 2px;
     width: 100%;
     background: #c96fcd;
     transform: scaleX(0);
@@ -672,16 +678,10 @@ a:hover {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
   }
-  .nav-container .navbar .navbar--list:nth-child(4) {
-    padding-right: 0px;
-  }
-}
-.nav-container .navbar--link:hover {
-  color: #c96fcd;
 }
 
 body {
-  background-color: #d6f3f3;
+  background-color: #c4d8c4;
 }
 
 /*# sourceMappingURL=styles.css.map */
