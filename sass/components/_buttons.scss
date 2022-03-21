@@ -1,3 +1,9 @@
+@use "../abstracts/mixins"as *;
+@use "../abstracts/variables"as *;
+
+
+
+
 /* Call to Action Button */
 .cta-btn {
   display: inline-block;
@@ -34,7 +40,7 @@
     color: $secondary-color !important;
 
     &:hover {
-      color: $white-color !important;
+      color: $just-white !important;
     }
   }
 
@@ -55,7 +61,7 @@
   }
 
   &:hover {
-    -webkit-text-fill-color: $white-color;
+    -webkit-text-fill-color: $just-white;
     text-decoration: none;
 
     @include respond(phone) {
@@ -70,11 +76,11 @@
 
 /* Resume Style */
 .cta-btn--resume {
-  color: $white-color;
-  border: 2px solid $white-color;
+  color: $just-white;
+  border: 2px solid $just-white;
 
   &::after {
-    background: $white-color;
+    background: $just-white;
   }
 
   &:hover {

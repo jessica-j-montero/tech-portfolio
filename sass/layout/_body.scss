@@ -1,0 +1,36 @@
+@use "../abstracts/_mixins.scss"as *;
+
+// HOME
+
+.body {
+  width: auto;
+
+  // It doesnt work &&
+
+  &__.header {
+    grid-area: header;
+    background-color: #8ca0ff;
+  }
+
+  .nav {
+    grid-area: nav;
+
+  }
+
+  .main {
+    grid-area: main;
+    background-color: #ffff64;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  display: grid;
+  grid-template-areas: "nav"
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+
+}

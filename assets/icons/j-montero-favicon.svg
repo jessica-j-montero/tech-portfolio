@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100.005" height="100.005" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c96fcd;
+      }
+
+      .cls-2 {
+        font-size: 63.5px;
+        text-anchor: middle;
+        fill: #282728;
+        font-family: Krungthep;
+      }
+
+      .cls-3 {
+        font-size: 21.167px;
+      }
+    </style>
+  </defs>
+  <image id="Fondo" width="150" height="150" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAA8UlEQVR4nO3RQQHAQAwEobT+Pe/Z4DFY4Nu2C+OvwlIIphBMIZhCMIVgCsEUgikEUwimEEwhmEIwhWAKwRSCKQRTCKYQTCGYQjCFYArBFIIpBFMIphBMIZhCMIVgCsEUgikEUwimEEwhmEIwhWAKwRSCKQRTCKYQTCGYQjCFYArBFIIpBFMIphBMIZhCMIVgCsEUgikEUwimEEwhmEIwhWAKwRSCKQRTCKYQTCGYQjCFYArBFIIpBFMIphBMIZhCMIVgCsEUgikEUwimEEwhmEIwhWAKwRSCKQRTCKYQTCGYQjCFYArBFIIpBFMIphDJ3T0IYATEmP4svAAAAABJRU5ErkJggg=="/>
+  <rect id="Rectángulo_1" data-name="Rectángulo 1" class="cls-1" x="-11" y="-34" width="193" height="218"/>
+  <text id="_" data-name="&lt;/ &gt;" class="cls-2" x="73.921" y="101.165"><tspan x="73.921">&lt;/<tspan class="cls-3"> </tspan>&gt;</tspan></text>
+</svg>

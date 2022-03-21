@@ -1,0 +1,20 @@
+@use "sass/abstracts/mixins"as *;
+@use "sass/abstracts/variables"as *;
+
+@use "sass/base/reset"as *;
+@use "sass/base/typography"as *;
+
+@use "sass/components/buttons"as *;
+
+@use "sass/layout/_body"as *;
+@use "sass/layout/_footer"as *;
+@use "sass/layout/nav"as *;
+
+
+
+
+
+
+body {
+  background-color: rgb(214, 243, 243);
+}
