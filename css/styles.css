@@ -555,7 +555,7 @@ a:hover {
   transition: 0.4s;
   position: fixed;
   top: 0;
-  height: 6em;
+  height: 4.4em;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -569,11 +569,11 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6em;
+  height: 4.2em;
 }
 .nav-container .nav--logo {
-  height: 5rem;
-  width: 5rem;
+  height: 3.8rem;
+  width: 3.8rem;
 }
 .nav-container .nav--logo img {
   border-radius: 50%;
