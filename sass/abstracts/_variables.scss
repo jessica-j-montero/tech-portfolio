@@ -1,9 +1,10 @@
 // Colors
 $primary-color: #c96fcd;
-$secondary-color: rgb(130, 122, 221);
+$secondary-color: #827add;
+$tertiary-color:#007A98;
 
 $dark-blue-text: #272341; // For Headings
-
+$cerulean:#0080BF;
 $carnation-pink: #ff72b2;
 $strong-orange: #ffa972;
 $strong-yellow: #ffca66;
@@ -18,5 +19,8 @@ $footer:#333;
 // Font size
 
 $default-font-size: 1.2rem;
-$mid-font-size: 2rem;
+// $xs-font-size: 0.2rem;
+
+$small-font-size: 1.4rem;
+$mid-font-size: 3rem;
 $big-font-size: 4rem;

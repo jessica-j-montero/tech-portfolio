@@ -5,32 +5,52 @@
 .body {
   width: auto;
 
-  // It doesnt work &&
-
   .header {
     grid-area: header;
-    background-color: #8ca0ff;
   }
 
   .nav {
     grid-area: nav;
-
   }
 
   .main {
     grid-area: main;
-    background-color: #ffff64;
   }
 
   .footer {
     grid-area: footer;
   }
 
+  // Mobile
   display: grid;
   grid-template-areas: "nav"
   "header"
   "main"
   "footer";
   grid-template-columns: 1fr;
+  position: relative;
+  height: 100vh;
+
+  // Tablet + desktop
+
+  @include respond(tab-port-next) {
+
+    grid-template:
+      "nav nav"
+      "main header"
+      "footer footer";
+    grid-template-columns: 6.5fr 5.5fr;
+    grid-template-rows: 3em auto 50px;
+  }
+
+  // Desktop
+  @include respond(tab-land-next) {
+    grid-template: "nav nav"
+      "main header"
+      "footer footer";
+    grid-template-columns: 9fr 3fr;
+    grid-template-rows: 3em auto 50px;
+  }
+
 
 }

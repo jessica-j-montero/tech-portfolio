@@ -57,6 +57,15 @@
     //900px
   }
 
+  @if $breakpoint==tab-port-next {
+    @media (min-width: 56.25em) {
+      @content;
+    }
+
+    //900px +
+  }
+
+
   // Table Landscape
   @if $breakpoint==tab-land {
     @media (max-width: 75em) {
@@ -73,7 +82,7 @@
       @content;
     }
 
-    //1200px +
+    //  1200px +
   }
 
   // Big Desktop
