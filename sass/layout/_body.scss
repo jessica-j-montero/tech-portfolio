@@ -1,6 +1,10 @@
 @use "../abstracts/_mixins.scss"as *;
 
-// HOME
+// We'll find the structure of all webside pages
+// *1 home page
+// *2 WP Project Page
+
+//*1 home page ----------
 
 .body {
   width: auto;
@@ -52,5 +56,6 @@
     grid-template-rows: 3em auto 50px;
   }
 
-
 }
+
+// *2 WP project page ----------

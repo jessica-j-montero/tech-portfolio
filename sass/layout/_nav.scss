@@ -57,6 +57,7 @@
 
   .navbar {
 
+    // mobile
     @include respond(tab-port) {
       .nav-toggle {
         background: none;
@@ -112,9 +113,10 @@
         }
       }
 
-      .navbar--link {}
+
     }
 
+    // tablet + desktop
     @include respond(tab-port-next) {
       .nav-toggle {
         display: none;
