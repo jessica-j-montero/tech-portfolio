@@ -878,4 +878,28 @@ a:hover {
   }
 }
 
+body {
+  background-color: #a4f8f8;
+}
+
+.main__layout {
+  display: flex;
+  margin-top: 3em;
+}
+
+.main__sidebar {
+  background-color: #f1dbbd;
+  flex-basis: 34vw;
+}
+
+.sidebar__box {
+  position: sticky;
+  top: 7em;
+}
+
+.main__content {
+  background-color: #f1bddb;
+  flex: 1 1 auto;
+}
+
 /*# sourceMappingURL=styles.css.map */

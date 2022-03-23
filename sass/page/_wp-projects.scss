@@ -1,2 +1,28 @@
 @use "../abstracts/_variables.scss"as *;
 @use "../abstracts/_mixins.scss"as *;
+
+body {
+  background-color: rgb(164, 248, 248);
+}
+
+.main__layout {
+  display: flex;
+  margin-top: 3em;
+}
+
+.main__sidebar {
+  background-color: rgb(241, 219, 189);
+  flex-basis: 34vw;
+}
+
+.sidebar__box {
+
+  position: sticky;
+  top: 7em;
+}
+
+.main__content {
+  background-color: rgb(241, 189, 219);
+  flex: 1 1 auto;
+
+}
