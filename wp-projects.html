@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+  <!-- theme__wp / PADRE -->
   <div class="theme__wp">
 
     <!-- header -->
@@ -54,12 +54,13 @@
 
     </header>
 
-
+    <!-- main__layout / PADRE -->
     <div class="main__layout">
       <!-- Sidebar -->
 
-
+      <!-- main__sidebar / PADRE -->
       <section class="main__sidebar">
+
         <div class="sidebar__box">
           <h2>WP Projects</h2>
           <ul class="sidebar--list">
@@ -73,8 +74,10 @@
 
 
       <!-- Main -->
+      <!-- main__content / Padre -->
       <main class="main__content">
-        <div class="main__wp-title" id="welcome">
+
+        <div class="main__title" id="welcome">
           <h1>Wordpress Projects</h1>
 
           <h2>Through different projects, I decided follow a workfkow that applied 360° panorama,
@@ -94,47 +97,73 @@
             <div class="features">
 
               <section class="feature">
-                <span class="feature__span">1</span>
-                <h3 class="feature__title">Planning</h3>
-                <p>Stage of planning and organising helps us to understand what tools, content and deadline a project
-                  needs. 👀 </p>
+                <div class="feature__circle circle-1">
+                  <span class="feature__span">1</span>
+                </div>
+                <div class="feature__content">
+                  <h3 class="feature__title">Planning</h3>
+                  <p>Stage of planning and organising helps us to understand what tools, content and deadline a project
+                    needs. 👀 </p>
+                </div>
+              </section>
+
+
+              <section class="feature">
+                <div class="feature__circle circle-2">
+                  <span class="feature__span">2</span>
+                </div>
+                <div class="feature__content">
+                  <h3 class="feature__title">Pick-up & Built</h3>
+                  <p>We already have the written and graphic information, start building the website's structure
+                    and look & feel. 🪚 </p>
+                </div>
               </section>
 
               <section class="feature">
-                <span class="feature__span">2</span>
-                <h3 class="feature__title">Pick-up & Built</h3>
-                <p>We already have the written and graphic information, start building the website's structure
-                  and look & feel. 🪚 </p>
+                <div class="feature__circle circle-3">
+                  <span class="feature__span">3</span>
+                </div>
+                <div class="feature__content">
+                  <h3 class="feature__title">SEO OnPage & Technical</h3>
+                  <p>It's time to make new friends! that Bots crawling, indexing and ranking thanks to content and
+                    architecture. 🤖</p>
+                </div>
               </section>
 
               <section class="feature">
-                <span class="feature__span">3</span>
-                <h3 class="feature__title">SEO OnPage & Technical</h3>
-                <p>It's time to make new friends! that Bots crawling, indexing and ranking thanks to content and
-                  architecture. 🤖 </p>
+                <div class="feature__circle circle-4">
+                  <span class="feature__span">4</span>
+                </div>
+                <div class="feature__content">
+                  <h3 class="feature__title">Approval</h3>
+                  <p>Now the client is the one who reviews and approves the design, we take the latest ideas and proceed
+                    to
+                    testing. 🤳</p>
+                </div>
               </section>
 
               <section class="feature">
-                <span class="feature__span">4</span>
-                <h3 class="feature__title">Approval</h3>
-                <p>Now the client is the one who reviews and approves the design, we take the latest ideas and proceed
-                  to
-                  testing. 🤳</p>
+                <div class="feature__circle circle-5">
+                  <span class="feature__span">5</span>
+                </div>
+                <div class="feature__content">
+                  <h3 class="feature__title">Launch</h3>
+                  <p>We have everything ready, now it's time for the last step and deploy the website on internet. 🚀
+                  </p>
+                </div>
               </section>
 
               <section class="feature">
-                <span class="feature__span">5</span>
-                <h3 class="feature__title">Launch</h3>
-                <p>We have everything ready, now it's time for the last step and deploy the website on internet. 🚀</p>
-              </section>
-
-              <section class="feature">
-                <span class="feature__span">6</span>
-                <h3 class="feature__title">Shearing & Teaching</h3>
-                <p>To facilitate Marketing/Sales works, I provided documentation, processes, and basic SEO best
-                  practice.
-                  🤓
-                </p>
+                <div class="feature__circle circle-6">
+                  <span class="feature__span">6</span>
+                </div>
+                <div class="feature__content">
+                  <h3 class="feature__title">Shearing & Teaching</h3>
+                  <p>To facilitate Marketing/Sales works, I provided documentation, processes, and basic SEO best
+                    practice.
+                    🤓
+                  </p>
+                </div>
               </section>
             </div>
           </div>
@@ -145,40 +174,32 @@
         <div id="projects"></div>
 
         <section class="card">
-          <h2 class="card--title">Projects</h2>
+          <h2 class="card__title">Projects</h2>
 
           <!-- Project 1 -->
           <article class="card--project">
 
-            <!--  Project info:  right side -->
-            <!-- img -->
-            <div class="project--item-six card__img-container">
-              <img src="assets/img/working-in-the-redwoods-website-by-jessica-j-montero.jpg"
+            <!-- flex1 -->
+
+            <div>
+              <img src="assets/img/prueba-mockup.png"
                 alt="Working in the Redwoods, Ecommerce Project by Jessica J. Montero">
             </div>
 
-            <!-- Project info: left side -->
+            <!-- flex2 -->
             <div class="project--description">
-              <h3 class="project--item-one">Working in the RedWoods </h3>
-              <h4 class="project--item-two">Ecommerce Website</h4>
-              <p class="project--item-three">Ecommerce Website Ecommerce of handmade ceramic tableware and decoration
+              <h3>Working in the RedWoods </h3>
+              <h4>Ecommerce Website</h4>
+              <p>Ecommerce Website Ecommerce of handmade ceramic tableware and decoration
                 products.
               </p>
-              <!-- button -->
-              <ul class="project--item-four">
-                <li>
-                  <a href="https://workingintheredwoods.com/" class="project--item-button" target="_blank">RedWoods
-                    Website</a>
-                </li>
-              </ul>
-              <!-- Tags  -->
-              <div class="project--item-five project-tags">
-                <span class="project--tag">#Woocommerce</span>
-                <span class="project--tag">#Responsive Design</span>
-                <span class="project--tag">#On-Page SEO</span>
-                <span class="project--tag">#Technical SEO </span>
-              </div>
+
+              <a href="https://workingintheredwoods.com/" class="cta-btn cta-btn--hero" target="_blank">RedWoods
+                Website</a>
+
+
             </div>
+
           </article>
 
           <!-- Project 2-->
@@ -357,7 +378,7 @@
         <!-- Recommendations -->
         <div id="recommendts"></div>
         <section class="comments">
-          <h2 class="comments--title">Recommendations</h2>
+          <h2 class="comments__title">Recommendations</h2>
           <!-- Comment one -->
           <section class="comment">
             <img src="assets/img/jessica-kamps-project-manager.jpg" alt="Jessica Kamps, project manager"

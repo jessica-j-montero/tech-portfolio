@@ -1,10 +1,12 @@
 @use "../abstracts/_mixins.scss"as *;
+@use "../base/reset"as *;
+
 
 // We'll find the structure of all webside pages
 // *1 home page
 // *2 WP Project Page
 
-//*1 home page ----------
+//*1 HOME page ----------
 
 .body {
   width: auto;
@@ -58,4 +60,58 @@
 
 }
 
-// *2 WP project page ----------
+// *2 WP PROJECTS page ----------
+
+.theme__wp {
+  width: auto;
+}
+
+.main__layout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  // background-color: rgb(170, 241, 241);
+}
+
+.main__content {
+  margin: 1.2rem 2rem;
+  // background-color: rgb(175, 170, 241);
+
+}
+
+// mobile
+@include respond(tab-port) {
+  .main__sidebar {
+    display: none;
+  }
+}
+
+// tablet + desktop
+@include respond(tab-port-next) {
+  .main__layout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+
+  // left side
+  .main__sidebar {
+    flex-basis: 30vw;
+    background-color: rgb(241, 170, 241);
+
+  }
+
+  .sidebar__box {
+    position: sticky;
+    top: 7em;
+  }
+
+
+  // righ side
+
+
+  .main__content {
+    flex: 1 1 auto;
+  }
+}

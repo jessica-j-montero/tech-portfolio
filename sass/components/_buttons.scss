@@ -23,7 +23,11 @@
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.9s;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.9s;
+    -moz-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.9s;
+    -ms-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.9s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.9s;
   }
 }
 
