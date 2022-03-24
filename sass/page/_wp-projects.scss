@@ -22,6 +22,15 @@
     font-weight: 300;
     padding-bottom: 2em;
   }
+
+}
+
+// width 900 +
+@include respond(tab-port-next) {
+  .main__title {
+    width: 80%;
+  }
+
 }
 
 .inner__title,
@@ -37,7 +46,8 @@
 .card,
 .comments {
   padding-bottom: 3em;
-
+  width: auto;
+  min-width: 320px;
 }
 
 
@@ -141,50 +151,106 @@
 // Projects -------
 
 .card--project {
-  @include flexCenter(flex, column, center, center);
-
-  @include respond(tab-port-smNext) {
-    @include flexCenter(flex, row, center, center);
-  }
+  text-align: center;
 
   .project--description {
 
-    @include flexCenter(flex, column, center, center);
-
     h3 {
-      font-size: $small-font-size;
       text-transform: uppercase;
       font-weight: 300;
-      margin-top: -25px;
+      font-size: 1.5rem;
     }
 
     h4 {
-      margin: 0;
-      margin-bottom: 1.25rem;
+      margin: .2rem;
+      font-size: 1.1rem;
     }
 
     p {
-      text-align: center;
-      padding-bottom: 1.4em;
+      width: 70%;
+      margin: auto;
+      padding-top: 1em;
     }
 
-
+    a {
+      margin-top: 2rem;
+      margin-bottom: 4.2rem;
+    }
   }
+
+  // from 600px +
+  @include respond (phone-next) {
+    @include flexCenter(flex, row, center, center);
+
+    picture {
+      // max-width: 100%;
+      flex: 50;
+    }
+
+    .project--description {
+      flex: 50;
+    }
+  }
+
+  // from 768px +
+  @include respond (tab-port-smNext) {
+    h3 {
+      padding-top: 2em;
+    }
+  }
+
 }
 
-// mobile
+// Reviews -------
 
-@include respond(tab-port) {
-  p {
-    font-size: $small-font-size;
+
+.reviews__box {
+  background-image: linear-gradient(135deg,
+      $primary-color 0%,
+      $secondary-color 100%);
+
+  h2 {
+    padding: 1.3em 0;
+    text-align: center
   }
-}
 
+  .single__review {
+    @include flexCenter(flex, row, center, center);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 1em;
 
-// tablet + desktop
-@include respond(tab-port-next) {
-  .main__title {
-    width: 70%;
+    .review {
+      min-height: 320px;
+      padding: 1.8rem;
+      @include flexCenter(flex, column, center, center);
+      text-align: center;
+
+      background-color: rgba(225, 225, 225, 0.1);
+      backdrop-filter: blur (20px);
+      border: rgba(225, 225, 225, 0.5);
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      .review--img {
+        border-radius: 100%;
+        // margin-right: auto;
+        // margin-left: auto;
+        padding-bottom: 0.5em;
+      }
+
+      p {
+        padding-bottom: 1em;
+      }
+
+    }
+
   }
+
+
 
 }

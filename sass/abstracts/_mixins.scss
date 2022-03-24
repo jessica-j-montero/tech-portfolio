@@ -31,30 +31,41 @@
     //0 - 320px
   }
 
-  // Phone
+  // Phone one
   @if $breakpoint==phone {
     @media (max-width: 37.5em) {
       @content;
     }
 
-    //0 - 600px
+    // from 0px to 600px
   }
 
-  // Table small
+  // Phone two
+  @if $breakpoint==phone-next {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+
+    // from 600px +
+  }
+
+  // Table small one
   @if $breakpoint==tab-port-sm {
     @media (max-width: 48em) {
       @content;
     }
 
-    // - 768px
+    // from 0px to 768px
   }
+
+  // Table small two
 
   @if $breakpoint==tab-port-smNext {
     @media (min-width: 48em) {
       @content;
     }
 
-    //768px + 
+    // from 768px + 
   }
 
   // Table Portrait
@@ -63,7 +74,7 @@
       @content;
     }
 
-    //900px
+    //// from 0px to 900px
   }
 
   @if $breakpoint==tab-port-next {
@@ -71,7 +82,7 @@
       @content;
     }
 
-    //900px +
+    // from 900px +
   }
 
 
@@ -81,7 +92,7 @@
       @content;
     }
 
-    //1200px
+    // from 0px to 1200px
   }
 
 
@@ -91,7 +102,7 @@
       @content;
     }
 
-    //  1200px +
+    //  from 1200px +
   }
 
   // Big Desktop
@@ -100,7 +111,7 @@
       @content;
     }
 
-    //1800px +
+    // from 1800px +
   }
 }
 

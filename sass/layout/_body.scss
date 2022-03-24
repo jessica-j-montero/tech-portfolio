@@ -97,9 +97,15 @@
 
   // left side
   .main__sidebar {
-    flex-basis: 30vw;
-    background-color: rgb(241, 170, 241);
+    // flex-basis: 30vw;
+    min-width: 16vw;
+    // background-color: rgb(241, 170, 241);
+    border-right: 1px solid grey;
+  }
 
+  // righ side
+  .main__content {
+    flex: 1 1 auto;
   }
 
   .sidebar__box {
@@ -108,10 +114,5 @@
   }
 
 
-  // righ side
 
-
-  .main__content {
-    flex: 1 1 auto;
-  }
 }
