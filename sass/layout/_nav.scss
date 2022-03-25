@@ -10,13 +10,20 @@
   transition: 0.4s;
   position: fixed;
   top: 0;
-  height: 5em;
+
   width: 100%;
   @include flexCenter(flex, row, center, center);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: 0.4s;
   z-index: 40;
 
+  // mobile
+  @include respond(tab-port) {
+    height: 5em;
+  }
+
+
+  //  tablet+ Desktop
   @include respond(tab-port-next) {
     height: 3em;
   }
@@ -52,6 +59,7 @@
 
   .navbar {
 
+
     // mobile
     @include respond(tab-port) {
       .nav-toggle {
@@ -59,8 +67,14 @@
         border: none;
         font-size: 1.6rem;
         line-height: 60px;
-        color: #1d1d1f;
+        color: $warm-black;
         cursor: pointer;
+
+        .fas {
+          @include flexCenter(flex, row, center, center);
+          font-size: 2.8rem;
+        }
+
       }
 
       .navbar--list {
@@ -72,12 +86,13 @@
         /* Menu position  */
         position: fixed;
         left: 0;
-        top: 5.5em;
+        top: 5em;
         width: 100%;
+
         // font-size: 1rem;
         letter-spacing: 0.1rem;
         color: white;
-        background-color: $tertiary-color;
+        background-color: black;
         height: calc(100% - 50px);
         /* In case we need a scroll */
         overflow-y: auto;
@@ -93,22 +108,19 @@
       .navbar--item {
         width: 100%;
         @include flexCenter(flex, row, center, center);
+        height: 4.7em;
+        border-bottom: 1px solid $strong-grey;
+        width: 60%;
+        font-size: 1rem;
 
-        height: 5em;
+        a {
+          color: $grey;
 
-        &:hover {
-          color: $primary-color;
-          background-color: $grey;
-          font-weight: bold;
-          font-size: $default-font-size;
-          transition: 0.8s;
-          -webkit-transition: 0.8s;
-          -moz-transition: 0.8s;
-          -ms-transition: 0.8s;
-          -o-transition: 0.8s;
+          &:hover {
+            color: $just-white;
+          }
         }
       }
-
 
     }
 
@@ -120,7 +132,7 @@
 
       .navbar--list {
         @include flexCenter(flex, row, space-between, center);
-
+        // color: $warm-black;
         text-transform: uppercase;
         $default-font-size: 0.4rem;
         font-size: $default-font-size;
@@ -129,6 +141,7 @@
         .navbar--item {
           padding-right: 4em;
           display: inline-block;
+
         }
 
         // :last-of-type doesn't work!
@@ -141,6 +154,9 @@
           font-size: $default-font-size;
           position: relative;
           font-weight: 400;
+
+          color: $warm-black;
+          color: #000;
         }
 
         .navbar--link {

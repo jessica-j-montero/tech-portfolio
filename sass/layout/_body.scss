@@ -1,5 +1,5 @@
 @use "../abstracts/_mixins.scss"as *;
-@use "../base/reset"as *;
+// @use "../base/reset"as *;
 
 
 // We'll find the structure of all webside pages
@@ -99,7 +99,6 @@
   .main__sidebar {
     // flex-basis: 30vw;
     min-width: 16vw;
-    // background-color: rgb(241, 170, 241);
     border-right: 1px solid grey;
   }
 
@@ -112,7 +111,5 @@
     position: sticky;
     top: 7em;
   }
-
-
 
 }

@@ -27,10 +27,12 @@
       font-size: $small-font-size;
       font-weight: 300;
 
+
       .skills {
         color: $primary-color;
         display: block;
         padding-top: 0.2em;
+        padding-bottom: 1em;
         font-weight: 500;
         text-transform: uppercase;
         font-size: $small-font-size;
@@ -97,7 +99,6 @@
   &__item {
     display: block;
     padding: 5em 0;
-    color: $just-white;
     overflow: hidden;
 
     transition: all 400ms ease;
@@ -112,6 +113,7 @@
       letter-spacing: 2px;
       font-size: $default-font-size;
       line-height: 26px;
+      color: $just-white;
     }
   }
 

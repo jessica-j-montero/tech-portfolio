@@ -5,11 +5,17 @@
 
 h1 {
   font-weight: 600;
+  color: $sweet-black;
 }
 
 p,
-a {
+a,
+h2,
+h3,
+h4 {
   font-family: 'Nunito', sans-serif;
+  color: $sweet-black;
+
 }
 
 a,
@@ -36,6 +42,6 @@ a:hover {
   }
 }
 
-.dark-blue-text {
-  color: $dark-blue-text !important;
-}
+// .dark-blue-text {
+//   color: $dark-blue-text !important;
+// }
