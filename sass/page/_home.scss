@@ -4,8 +4,6 @@
 .header {
   min-width: 320px;
   margin-top: 9em;
-  // fin header
-
 
   &__text {
     width: 80%;
@@ -18,12 +16,13 @@
     text-align: center;
 
     h1 {
+      order: 2;
       padding-bottom: 2rem;
       font-size: $mid-font-size;
-
     }
 
     h2 {
+      order: 3;
       padding-bottom: 2rem;
       font-size: $small-font-size;
       font-weight: 300;
@@ -34,23 +33,23 @@
         padding-top: 0.2em;
         font-weight: 500;
         text-transform: uppercase;
-        font-size: $default-font-size;
+        font-size: $small-font-size;
       }
-
     }
 
+    .header__img {
+      order: 0;
+      height: 12em;
+      margin-bottom: 3em;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+    }
   }
 
-  &__img {
-    height: 12em;
-    margin-bottom: 3em;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-
-  }
 
   // tablet
 
@@ -68,10 +67,8 @@
 
     }
 
-
     h1 {
       line-height: 1em;
-      order: 2;
       padding-bottom: 0.3em;
 
 
@@ -80,23 +77,19 @@
     h2 {
       font-size: $default-font-size;
       font-weight: 200;
-      order: 3;
 
       .skills {
-        font-size: 0.9em;
+        font-size: $default-font-size;
       }
     }
 
-    &__img {
-      height: 7em;
-      order: 0;
+    .header__img {
+      height: 9em;
       margin: 1.5em;
     }
   }
 
 }
-
-
 
 .main {
   text-align: center;
