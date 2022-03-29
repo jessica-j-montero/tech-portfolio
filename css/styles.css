@@ -911,20 +911,19 @@ a:hover {
   }
 }
 .main__item-1 {
-  background-color: #007A98;
+  background-color: #C96FCD;
 }
 .main__item-2 {
-  background-color: #0080BF;
+  background-color: #827ADD;
 }
 .main__item-3 {
-  background-color: #827add;
+  background-color: #0080D8;
 }
 .main__item-4 {
-  background-color: #c96fcd;
+  background-color: #0080BF;
 }
 .main__item-5 {
-  background-color: #0080BF;
-  background-color: #ff72b2;
+  background-color: #007A98;
 }
 @media (min-width: 75em) {
   .main {
@@ -1089,7 +1088,11 @@ a:hover {
 .feature:hover {
   backdrop-filter: blur();
   background-image: linear-gradient(135deg, #c96fcd 0%, #827add 100%);
-  color: #fff;
+}
+.feature:hover h3,
+.feature:hover h4,
+.feature:hover p {
+  color: #faf5f5;
 }
 .feature__circle {
   position: relative;
@@ -1110,12 +1113,12 @@ a:hover {
 .feature .circle-1,
 .feature .circle-3,
 .feature .circle-5 {
-  background-color: #0080BF;
+  background-color: #000;
 }
 .feature .circle-2,
 .feature .circle-4,
 .feature .circle-6 {
-  background-color: #ffca66;
+  background-color: #827ADD;
 }
 .feature__content {
   position: relative;
@@ -1127,6 +1130,24 @@ a:hover {
 
 .card--project {
   text-align: center;
+}
+.card--project .bg-shapes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-size: cover;
+  background-color: #eed3f0;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  -webkit-border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  -moz-border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  -ms-border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  -o-border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  height: 400px;
+}
+.card--project .bg-shapes img {
+  width: 80%;
+  height: 80%;
 }
 .card--project .project--description h3 {
   text-transform: uppercase;
