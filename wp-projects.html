@@ -25,25 +25,17 @@
 </head>
 
 <body>
-  <!-- theme__wp / PADRE -->
+
   <div class="theme__wp">
-
-    <!-- header -->
-
     <header class="nav">
-
       <div class="nav__container ">
-
         <div class="nav--logo">
           <a href="index.html"><img src="assets/icons/j-montero-favicon.svg" alt=""></a>
         </div>
-
         <nav class="navbar">
-
           <button class="nav-toggle" aria-label="click here to open the navbar">
             <i class="fas fa-bars"></i>
           </button>
-
           <ul class="navbar--list">
             <li class="navbar--item"><a href="index.html" class="navbar--link">Home</a></li>
             <li class="navbar--item"><a href="#" class="navbar--link">Frontend </a></li>
@@ -55,32 +47,17 @@
 
             <li class="navbar--item"><a href="#" class="navbar--link">Wordpress</a></li>
           </ul>
-
         </nav>
-
       </div>
 
     </header>
-
-    <!-- main__layout / PADRE -->
-    <div class="main__layout">
-      <!-- Sidebar -->
-
-      <!-- main__sidebar / PADRE -->
-      <section class="main__sidebar">
-
-        <!-- /**1 sidebar__nav carry-on the sticky -->
+    <div class="layout">
+      <div class="sidebar-box">
+        <!-- <aside> get the sticky -->
         <aside>
-
-
-          <!-- *****  NAV / inicio ejemplo ****-->
-
           <div class="sidebar">
             <h2 class="aside-title">WP Projects</h2>
-
             <ul class="sidebar__list">
-
-              <!-- Welcome -->
               <li>
                 <a href="#welcome">
                   <span> Welcome</span></a>
@@ -101,363 +78,375 @@
               </li>
             </ul>
           </div>
-
         </aside>
-      </section>
+      </div>
 
 
       <!-- Main -->
-      <!-- main__content / Padre -->
       <main class="main__content">
 
-        <div class="main__title" id="welcome">
-          <h1>Wordpress Projects</h1>
+        <!-- Box1 -->
 
-          <h2>Through different projects, I decided follow a workfkow that applied 360° panorama,
-            where
-            Responsive Web Design, SEO and Marketing merge 💜.</h2>
+        <div class="main__content-1">
+          <div class="main__title" id="welcome">
+            <h1>Wordpress Projects</h1>
+
+            <h2>Through different projects, I decided follow a workfkow that applied 360° panorama,
+              where
+              Responsive Web Design, SEO and Marketing merge 💜.</h2>
+          </div>
+
+          <!-- Workflow ---------  -->
+          <div id="workflow"></div>
+          <section>
+            <div class="inner">
+              <h2 class="inner__title">Workflow in 6 Steps</h2>
+              <p class="inner__text"> Rome wasn't built in a day, for great things same...
+              </p>
+
+              <div class="features">
+
+                <section class="feature">
+                  <div class="feature__circle circle-1">
+                    <span class="feature__span">1</span>
+                  </div>
+                  <div class="feature__content">
+                    <h3 class="feature__title">Planning</h3>
+                    <p>Stage of planning and organising helps us to understand what tools, content and deadline a
+                      project
+                      needs. 👀 </p>
+                  </div>
+                </section>
+
+
+                <section class="feature">
+                  <div class="feature__circle circle-2">
+                    <span class="feature__span">2</span>
+                  </div>
+                  <div class="feature__content">
+                    <h3 class="feature__title">Pick-up & Built</h3>
+                    <p>We already have the written and graphic information, start building the website's structure
+                      and look & feel. 🪚 </p>
+                  </div>
+                </section>
+
+                <section class="feature">
+                  <div class="feature__circle circle-3">
+                    <span class="feature__span">3</span>
+                  </div>
+                  <div class="feature__content">
+                    <h3 class="feature__title">SEO OnPage & Technical</h3>
+                    <p>It's time to make new friends! that Bots crawling, indexing and ranking thanks to content and
+                      architecture. 🤖</p>
+                  </div>
+                </section>
+
+                <section class="feature">
+                  <div class="feature__circle circle-4">
+                    <span class="feature__span">4</span>
+                  </div>
+                  <div class="feature__content">
+                    <h3 class="feature__title">Approval</h3>
+                    <p>Now the client is the one who reviews and approves the design, we take the latest ideas and
+                      proceed
+                      to
+                      testing. 🤳</p>
+                  </div>
+                </section>
+
+                <section class="feature">
+                  <div class="feature__circle circle-5">
+                    <span class="feature__span">5</span>
+                  </div>
+                  <div class="feature__content">
+                    <h3 class="feature__title">Launch</h3>
+                    <p>We have everything ready, now it's time for the last step and deploy the website on internet. 🚀
+                    </p>
+                  </div>
+                </section>
+
+                <section class="feature">
+                  <div class="feature__circle circle-6">
+                    <span class="feature__span">6</span>
+                  </div>
+                  <div class="feature__content">
+                    <h3 class="feature__title">Shearing & Teaching</h3>
+                    <p>To facilitate Marketing/Sales works, I provided documentation, processes, and basic SEO best
+                      practice.
+                      🤓
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+
+
+
+          <div id="projects"></div>
+          <section class="card">
+            <h2 class="card__title">Projects</h2>
+            <!-- Project 1 -->
+            <article class="card--project">
+              <!-- left -->
+              <div class="bg-shapes bg-shape1">
+                <div class="resize-picture">
+                  <picture>
+                    <source media="(max-width: 699px)" srcset="assets/img/working-in-the-redwoods-mobile-version.png">
+                    <source media="(min-width: 700px)"
+                      srcset="assets/img/working-in-the-redwoods-ecommerce-website.png">
+                    <img src="assets/img/working-in-the-redwoods-ecommerce-website.png"
+                      alt="Working in the redwoods, Ecommerce website by Jessica J. Montero">
+                  </picture>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="project--description">
+                <h3>Working in the RedWoods </h3>
+                <h4>Ecommerce Website</h4>
+                <div class="project-paragraph">
+                  <p>Ecommerce of handmade ceramic tableware and decoration
+                    products.
+                  </p>
+                </div>
+                <a href="https://workingintheredwoods.com/" class="cta-btn cta-btn--hero" target="_blank">RedWoods
+                  Website</a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card--project">
+              <!-- left -->
+              <div class="bg-shapes bg-shape2">
+                <div class="resize-picture">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
+                    <source media="(min-width: 768px)" srcset="assets/img/secartys-corporate-website.png">
+                    <img src="assets/img/secartys-corporate-website.png"
+                      alt="Secartys, Corporate website by Jessica J. Montero">
+                  </picture>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="project--description">
+                <h3>SECARTYS </h3>
+                <h4>Corporate Website</h4>
+                <div class="project-paragraph">
+                  <p>Company that hosts clusters from different sectors, such as: Lighting, Smart Tech and Solar Energy.
+                  </p>
+                </div>
+
+                <a href="https://workingintheredwoods.com/" class="cta-btn cta-btn--hero" target="_blank">Secartys
+                  Website</a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="card--project">
+              <!-- left -->
+              <div class="bg-shapes bg-shape3">
+                <div class="resize-picture">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
+                    <source media="(min-width: 768px)" srcset="assets/img/cicat-corporate-website.png">
+                    <img src="assets/img/cicat-corporate-website.png"
+                      alt="Cicat, Corporate website by Jessica J. Montero">
+                  </picture>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="project--description">
+                <h3>CICAT </h3>
+                <h4>Corporate Website</h4>
+                <div class="project-paragraph">
+                  <p>Business Cluster of interconnected businesses and associated companies's lighting field.
+                  </p>
+                </div>
+                <a href="https://clusteriluminacion.org/" class="cta-btn cta-btn--hero" target="_blank">Cicat
+                  Website</a>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="card--project">
+              <!-- left -->
+              <div class="bg-shapes bg-shape4">
+                <div class="resize-picture">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
+                    <source media="(min-width: 768px)" srcset="assets/img/smartech-corporate-website.png">
+                    <img src="assets/img/smartech-corporate-website.png"
+                      alt="Smartech, Corporate website by Jessica J. Montero">
+                  </picture>
+                </div>
+              </div>
+              <!-- rigth -->
+              <div class="project--description">
+                <h3>SMARTECH </h3>
+                <h4>Corporate Website</h4>
+                <div class="project-paragraph">
+                  <p>Smartech is a business cluster of interconnected businesses and associated companies's smart
+                    technology
+                    field.
+                  </p>
+                </div>
+                <a href="https://smartechcluster.org/es/smartech-academy/" class="cta-btn cta-btn--hero"
+                  target="_blank">Smartech
+                  Website</a>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="card--project">
+              <!-- left -->
+              <div class="bg-shapes bg-shape5">
+                <div class="resize-picture">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/solartys-corporate-website.png">
+                    <source media="(min-width: 768px)" srcset="assets/img/solartys-corporate-website.png">
+                    <img src="assets/img/smartech-corporate-website.png"
+                      alt="Solartys, Corporate website by Jessica J. Montero">
+                  </picture>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="project--description">
+                <h3>Solartys </h3>
+                <h4>Corporate Website</h4>
+                <div class="project-paragraph">
+                  <p>It works alongside the entire solar energy value chain, manufacturers and distributors.
+                  </p>
+                </div>
+                <a href="https://www.solartys.org/en/" class="cta-btn cta-btn--hero" target="_blank">Solartys
+                  Website</a>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="card--project">
+              <!-- left -->
+              <div class="bg-shapes bg-shape6">
+                <div class="resize-picture">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/solartys-corporate-website.png">
+                    <source media="(min-width: 768px)" srcset="assets/img/lola-de-miguel-personal-brand-website.png">
+                    <img src="assets/img/lola-de-miguel-personal-brand-website.png"
+                      alt="Lola de miguel campos, Personal Brand Website by Jessica J. Montero">
+                  </picture>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="project--description">
+                <h3>Lola de Miguel Campos </h3>
+                <h4>Personal Brand Website</h4>
+                <div class="project-paragraph">
+                  <p> Psychology website focused on taking advantage of the
+                    years experience and Holistic work that Lola does.
+                  </p>
+                </div>
+
+                <a href="https://lolademiguelcampos.com/" class="cta-btn cta-btn--hero" target="_blank">Solartys
+                  Website</a>
+              </div>
+            </article>
+            <!-- Project 7 -->
+            <article class="card--project">
+              <!-- left -->
+              <div class="bg-shapes bg-shape7">
+                <div class="resize-picture">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="assets/img/solartys-corporate-website.png">
+                    <source media="(min-width: 768px)" srcset="assets/img/terractiva-corporate-website.png">
+                    <img src="assets/img/terractiva-corporate-website.png"
+                      alt="Terractiva, corporate Website by Jessica J. Montero">
+                  </picture>
+                </div>
+              </div>
+              <!-- right -->
+              <div class="project--description">
+                <h3>Terractiva </h3>
+                <h4>Corporate Website</h4>
+                <div class="project-paragraph">
+                  <p> Geological consultancy focusing in
+                    hydrocarbon and energy sector.
+                  </p>
+                </div>
+
+                <a href="https://terractiva.net/" class="cta-btn cta-btn--hero" target="_blank">Terractiva
+                  Website</a>
+              </div>
+            </article>
+
+
+          </section>
         </div>
 
-        <!-- Workflow / Wrapper -->
-        <div id="workflow"></div>
-        <!-- <section id="workflow" class="wrapper"> -->
-        <section>
-          <div class="inner">
-            <h2 class="inner__title">Workflow in 6 Steps</h2>
-            <p class="inner__text"> Rome wasn't built in a day, for great things same...
-            </p>
-
-            <div class="features">
-
-              <section class="feature">
-                <div class="feature__circle circle-1">
-                  <span class="feature__span">1</span>
-                </div>
-                <div class="feature__content">
-                  <h3 class="feature__title">Planning</h3>
-                  <p>Stage of planning and organising helps us to understand what tools, content and deadline a project
-                    needs. 👀 </p>
-                </div>
-              </section>
-
-
-              <section class="feature">
-                <div class="feature__circle circle-2">
-                  <span class="feature__span">2</span>
-                </div>
-                <div class="feature__content">
-                  <h3 class="feature__title">Pick-up & Built</h3>
-                  <p>We already have the written and graphic information, start building the website's structure
-                    and look & feel. 🪚 </p>
-                </div>
-              </section>
-
-              <section class="feature">
-                <div class="feature__circle circle-3">
-                  <span class="feature__span">3</span>
-                </div>
-                <div class="feature__content">
-                  <h3 class="feature__title">SEO OnPage & Technical</h3>
-                  <p>It's time to make new friends! that Bots crawling, indexing and ranking thanks to content and
-                    architecture. 🤖</p>
-                </div>
-              </section>
-
-              <section class="feature">
-                <div class="feature__circle circle-4">
-                  <span class="feature__span">4</span>
-                </div>
-                <div class="feature__content">
-                  <h3 class="feature__title">Approval</h3>
-                  <p>Now the client is the one who reviews and approves the design, we take the latest ideas and proceed
-                    to
-                    testing. 🤳</p>
-                </div>
-              </section>
-
-              <section class="feature">
-                <div class="feature__circle circle-5">
-                  <span class="feature__span">5</span>
-                </div>
-                <div class="feature__content">
-                  <h3 class="feature__title">Launch</h3>
-                  <p>We have everything ready, now it's time for the last step and deploy the website on internet. 🚀
-                  </p>
-                </div>
-              </section>
-
-              <section class="feature">
-                <div class="feature__circle circle-6">
-                  <span class="feature__span">6</span>
-                </div>
-                <div class="feature__content">
-                  <h3 class="feature__title">Shearing & Teaching</h3>
-                  <p>To facilitate Marketing/Sales works, I provided documentation, processes, and basic SEO best
-                    practice.
-                    🤓
-                  </p>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
-
-
-        <!-- Projects Container -->
-        <div id="projects"></div>
-
-        <section class="card">
-          <h2 class="card__title">Projects</h2>
-          <!-- Project 1 -->
-          <article class="card--project">
-            <!-- flex1 -->
-            <div class="bg-shapes bg-shape1">
-              <div class="resize-picture">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="assets/img/cicat-corporate-website.png">
-                  <source media="(min-width: 768px)" srcset="assets/img/moxkup-trans2.png">
-                  <img src="assets/img/moxkup-trans2.png"
-                    alt="Working in the redwoods, Ecommerce website by Jessica J. Montero">
-                </picture>
-              </div>
-            </div>
-            <!-- flex2 -->
-            <div class="project--description">
-              <h3>Working in the RedWoods </h3>
-              <h4>Ecommerce Website</h4>
-              <p>Ecommerce of handmade ceramic tableware and decoration
-                products.
-              </p>
-              <a href="https://workingintheredwoods.com/" class="cta-btn cta-btn--hero" target="_blank">RedWoods
-                Website</a>
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="card--project">
-            <!-- flex1 -->
-            <div class="bg-shapes bg-shape2">
-              <div class="resize-picture">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
-                  <source media="(min-width: 768px)" srcset="assets/img/secartys-corporate-website.png">
-                  <img src="assets/img/secartys-corporate-website.png"
-                    alt="Secartys, Corporate website by Jessica J. Montero">
-                </picture>
-              </div>
-            </div>
-            <!-- flex2 -->
-            <div class="project--description">
-              <h3>SECARTYS </h3>
-              <h4>Corporate Website</h4>
-              <p>Company that hosts clusters from different sectors, such as: Lighting, Smart Tech and Solar Energy.
-              </p>
-              <a href="https://workingintheredwoods.com/" class="cta-btn cta-btn--hero" target="_blank">Secartys
-                Website</a>
-            </div>
-          </article>
-
-
-          <!-- Project 3 -->
-          <article class="card--project">
-            <!-- flex1 -->
-            <div class="bg-shapes bg-shape3">
-              <div class="resize-picture">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
-                  <source media="(min-width: 768px)" srcset="assets/img/cicat-corporate-website.png">
-                  <img src="assets/img/cicat-corporate-website.png"
-                    alt="Cicat, Corporate website by Jessica J. Montero">
-                </picture>
-              </div>
-            </div>
-            <!-- flex2 -->
-            <div class="project--description">
-              <h3>CICAT </h3>
-              <h4>Corporate Website</h4>
-              <p>Business Cluster of interconnected businesses and associated companies's lighting field.
-              </p>
-              <a href="https://clusteriluminacion.org/" class="cta-btn cta-btn--hero" target="_blank">Cicat
-                Website</a>
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="card--project">
-            <!-- flex1 -->
-            <div class="bg-shapes bg-shape4">
-              <div class="resize-picture">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
-                  <source media="(min-width: 768px)" srcset="assets/img/smartech-corporate-website.png">
-                  <img src="assets/img/smartech-corporate-website.png"
-                    alt="Smartech, Corporate website by Jessica J. Montero">
-                </picture>
-              </div>
-            </div>
-            <!-- flex2 -->
-            <div class="project--description">
-              <h3>SMARTECH </h3>
-              <h4>Corporate Website</h4>
-              <p>Smartech is a business cluster of interconnected businesses and associated companies's smart technology
-                field.
-              </p>
-              <a href="https://smartechcluster.org/es/smartech-academy/" class="cta-btn cta-btn--hero"
-                target="_blank">Smartech
-                Website</a>
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="card--project">
-            <!-- flex1 -->
-            <picture>
-              <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
-              <source media="(min-width: 768px)" srcset="assets/img/working-in-the-redwoods-mockup-desktop.jpeg">
-              <img src="assets/img/working-in-the-redwoods-mockup-desktop.jpeg"
-                alt="Working in the redwoods, Ecommerce website by Jessica J. Montero">
-            </picture>
-            <!-- flex2 -->
-            <div class="project--description">
-              <h3>Smartech </h3>
-              <h4>Corporate Website</h4>
-              <p>Smartech is a business cluster of interconnected
-                businesses
-                and associated companies's smart technology field.
-              </p>
-              <a href="https://smartechcluster.org/es/smartech-academy/" class="cta-btn cta-btn--hero"
-                target="_blank">Smartech
-                Website</a>
-            </div>
-          </article>
-
-          <!-- Project 5 -->
-          <article class="card--project">
-            <!-- flex1 -->
-            <picture>
-              <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
-              <source media="(min-width: 768px)" srcset="assets/img/working-in-the-redwoods-mockup-desktop.jpeg">
-              <img src="assets/img/working-in-the-redwoods-mockup-desktop.jpeg"
-                alt="Working in the redwoods, Ecommerce website by Jessica J. Montero">
-            </picture>
-            <!-- flex2 -->
-            <div class="project--description">
-              <h3>Solartys </h3>
-              <h4>Corporate Website</h4>
-              <p> It works alongside the entire solar energy value chain, manufacturers and distributors.
-              </p>
-              <a href="https://www.solartys.org/en/" class="cta-btn cta-btn--hero" target="_blank">Solartys
-                Website</a>
-            </div>
-          </article>
-
-          <!-- Project 6 -->
-          <article class="card--project">
-            <!-- flex1 -->
-            <picture>
-              <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
-              <source media="(min-width: 768px)" srcset="assets/img/working-in-the-redwoods-mockup-desktop.jpeg">
-              <img src="assets/img/working-in-the-redwoods-mockup-desktop.jpeg"
-                alt="Working in the redwoods, Ecommerce website by Jessica J. Montero">
-            </picture>
-            <!-- flex2 -->
-            <div class="project--description">
-              <h3>Lola de Miguel Campos </h3>
-              <h4>Personal Brand Website</h4>
-              <p> Psychology website focused on taking advantage of the
-                years experience and Holistic work that Lola does.
-              </p>
-              <a href="https://lolademiguelcampos.com/" class="cta-btn cta-btn--hero" target="_blank">Lola
-                Website</a>
-            </div>
-          </article>
-          <!-- Project 7 -->
-          <article class="card--project">
-            <!-- flex1 -->
-            <picture>
-              <source media="(max-width: 767px)" srcset="assets/img/working-in-the-redwoods-mockup-mobile.jpeg">
-              <source media="(min-width: 768px)" srcset="assets/img/working-in-the-redwoods-mockup-desktop.jpeg">
-              <img src="assets/img/working-in-the-redwoods-mockup-desktop.jpeg"
-                alt="Working in the redwoods, Ecommerce website by Jessica J. Montero">
-            </picture>
-            <!-- flex2 -->
-            <div class="project--description">
-              <h3>Terractiva </h3>
-              <h4>Corporate Website</h4>
-              <p> Geological consultancy focusing in
-                hydrocarbon and energy sector.
-              </p>
-              <a href="https://terractiva.net/" class="cta-btn cta-btn--hero" target="_blank">Terractiva
-                Website</a>
-            </div>
-          </article>
-
-        </section>
-
-        <!-- Reviews -->
+        <!-- Box2 -->
         <div id="reviews"></div>
-        <section class="reviews__box">
-          <h2 class="card__title">Reviews</h2>
-          <div class="single__review">
-            <!-- Comment 1 -->
-            <section class="review ">
-              <img src="assets/img/jessica-kamps-project-manager.jpg" alt="Jessica Kamps, project manager"
-                class="review--img">
-              <h3>Jessica Kamps</h3>
-              <p>Project Manager</p>
-              <p>Their work has allowed us to gain visibility and leads in addition to modernizing our brand image. She
-                is
-                a
-                person with
-                a positive attitude, creative and organized.</p>
-              <a href="https://www.linkedin.com/in/jessicakamps/" class="cta-btn cta-btn--resume "
-                target="_blank">LinkedIn</a>
+        <div class="main__content-2">
+          <!-- Reviews -------- -->
+          <section class="reviews__box">
+            <h2 class="card__title">Reviews</h2>
+            <div class="single__review">
+              <!-- Comment 1 -->
+              <section class="review ">
+                <img src="assets/img/jessica-kamps-project-manager.jpg" alt="Jessica Kamps, project manager"
+                  class="review--img">
+                <h3>Jessica Kamps</h3>
+                <h4>Project Manager</h4>
+                <p>Her work has allowed us to gain visibility and leads in addition to modernizing our brand image.
+                  She
+                  is
+                  a
+                  person with
+                  a positive attitude, creative and organized.</p>
+                <a href="https://www.linkedin.com/in/jessicakamps/" class="cta-btn cta-btn--resume "
+                  target="_blank">LinkedIn</a>
 
-            </section>
+              </section>
 
-            <!-- Comment 2 -->
-            <section class="review ">
-              <img src="assets/img/lola-de-miguel-campos-psychology.jpg"
-                alt="Lola de Miguel Campos, psicologa especialista en constelaciones familiares" class="review--img">
-              <h3>Lola de Miguel Campos</h3>
-              <p>Psychology</p>
-              <p>The highlighted how organized she is, organizing all the information from my previous
-                website
-                to select
-                the most valuable information and give it a modern look.</p>
-              <a href="https://lolademiguelcampos.com/proceso-personal/" class="cta-btn cta-btn--resume "
-                target="_blank">Bio</a>
-            </section>
+              <!-- Comment 2 -->
+              <section class="review ">
+                <img src="assets/img/lola-de-miguel-campos-psychology.jpg"
+                  alt="Lola de Miguel Campos, psicologa especialista en constelaciones familiares" class="review--img">
+                <h3>Lola de Miguel Campos</h3>
+                <p>Psychology</p>
+                <p>The highlighted how organized she is, organizing all the information from my previous
+                  website
+                  to select
+                  the most valuable information and give it a modern look.</p>
+                <a href="https://lolademiguelcampos.com/proceso-personal/" class="cta-btn cta-btn--resume "
+                  target="_blank">Bio</a>
+              </section>
 
-            <!-- Comment 3 -->
-            <section class="review ">
-              <img src="assets/img/oscar-vidal-royo-terractiva.jpg"
-                alt="Oskar Vidal Royo, Terractiva's Managing Director" class="review--img">
-              <h3>Oskar Vidal Royo</h3>
-              <p>Managing Director</p>
-              <p>She performed all of it with utmost professionalism, care and passion for her job while keeping
-                passion,
-                involvement and
-                communication with us at the highest level.</p>
-              <a href="https://www.linkedin.com/in/oskar-vidal-royo-50676572/" class="cta-btn cta-btn--resume "
-                target="_blank">LinkedIn</a>
+              <!-- Comment 3 -->
+              <section class="review ">
+                <img src="assets/img/oscar-vidal-royo-terractiva.jpg"
+                  alt="Oskar Vidal Royo, Terractiva's Managing Director" class="review--img">
+                <h3>Oskar Vidal Royo</h3>
+                <p>Managing Director</p>
+                <p>Jessica performed all of it with utmost professionalism, care, for her job while keeping passion,
+                  involvement and communication with us at the highest level.</p>
+                <a href="https://www.linkedin.com/in/oskar-vidal-royo-50676572/" class="cta-btn cta-btn--resume "
+                  target="_blank">LinkedIn</a>
 
-            </section>
+              </section>
 
-          </div>
-        </section>
+            </div>
+          </section>
+        </div>
 
       </main>
 
-      <!-- </div> -->
-
 
     </div>
+
     <!-- Footer -->
     <footer class="footer">
       <p class="footer__info"><a href="index.html">© 2022 Jessica J. Montero</a></p>
     </footer>
 
+    <!-- end theme__wp -->
   </div>
 </body>
 

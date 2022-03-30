@@ -68,29 +68,24 @@
   width: auto;
 }
 
-.main__layout {
+.layout {
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
 
 }
 
-.main__content {
-  margin: 1.2rem 2rem;
-
-
-}
 
 // mobile
 @include respond(tab-port) {
-  .main__sidebar {
+  .sidebar-box {
     display: none;
   }
 }
 
 // tablet + desktop
 @include respond(tab-port-next) {
-  .main__layout {
+  .layout {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -98,18 +93,17 @@
   }
 
   // left side
-  .main__sidebar {
+  .sidebar-box {
     // flex-basis: 30vw;
-    min-width: 16vw;
+    min-width: 15vw;
     border-right: 1px solid grey;
   }
 
-  // righ side
-  .main__content {
-    flex: 1 1 auto;
-  }
+  // .main__content {
+  //   flex: 1 1 auto;
+  // }
 
-  // SIDEBAR
+  // sidebar
 
   aside {
     position: sticky;

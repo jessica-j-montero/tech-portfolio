@@ -6,104 +6,9 @@
   text-align: left;
 }
 
-
-// .aside-title {
-//   margin-bottom: 2.5rem;
-// }
-
-// .sidebar {
-//   position: relative;
-
-//   .sidebar__expand {
-//     width: 1.8rem;
-//     height: 1.8rem;
-//     fill: $sweet-black;
-//     background-color: $just-white;
-//     box-shadow: 0px 0px 3px $sweet-black;
-//     border-radius: 50%;
-//     -webkit-border-radius: 50%;
-//     -moz-border-radius: 50%;
-//     -ms-border-radius: 50%;
-//     -o-border-radius: 50%;
-//     position: absolute;
-//     right: -1rem;
-//     top: 1rem;
-//     z-index: 99;
-//     cursor: pointer;
-//     transform: rotateZ(-180deg);
-//     -webkit-transform: rotateZ(-180deg);
-//     -moz-transform: rotateZ(-180deg);
-//     -ms-transform: rotateZ(-180deg);
-//     -o-transform: rotateZ(-180deg);
-//     transition: transform 200ms ease-in-out;
-//     -webkit-transition: transform 200ms ease-in-out;
-//     -moz-transition: transform 200ms ease-in-out;
-//     -ms-transition: transform 200ms ease-in-out;
-//     -o-transition: transform 200ms ease-in-out;
-
-//     &:hover {
-//       fill: $warm-black;
-//     }
-//   }
-
-//   .sidebar__list {
-//     display: flex;
-//     flex-direction: column;
-
-//     .sidebar__listitem {
-//       // width: 100px;
-//       transition: all 200ms ease-in;
-//       -webkit-transition: all 200ms ease-in;
-//       -moz-transition: all 200ms ease-in;
-//       -ms-transition: all 200ms ease-in;
-//       -o-transition: all 200ms ease-in;
-//       padding: 1em 1.5em;
-//       border-left: 6px solid transparent;
-//       cursor: pointer;
-
-//       &:hover {
-//         background-color: #b2d8eb;
-//       }
-
-//       a {
-//         display: flex;
-//         align-items: center;
-//         gap: 10px;
-//         color: $sweet-black;
-//         font-weight: 400;
-//       }
-
-//       svg {
-//         fill: $sweet-black;
-//       }
-
-//       &-active {
-//         background-color: $strong-grey;
-//         border-left: 6px solid $cerulean;
-
-//         svg,
-//         span {
-//           color: $cerulean;
-//           fill: $cerulean;
-//         }
-//       }
-//     }
-//   }
-
-//   // Close section
-//   .sidebar-closed .sidebar__expand {
-//     transform: rotateZ(0deg);
-//     -webkit-transform: rotateZ(0deg);
-//     -moz-transform: rotateZ(0deg);
-//     -ms-transform: rotateZ(0deg);
-//     -o-transform: rotateZ(0deg);
-//   }
-
-//   .sidebar-closed .sidebar__listitem span {
-//     display: none;
-//   }
-
-// }
+.main__content-1 {
+  margin: 3rem;
+}
 
 // All title
 .main__title {
@@ -119,20 +24,18 @@
     padding-bottom: 2em;
   }
 
-}
-
-// width 900 +
-@include respond(tab-port-next) {
-  .main__title {
+  // width 900 +
+  @include respond(tab-port-next) {
     width: 80%;
   }
 
 }
 
+
+
 .inner__title,
 .card__title,
 .comments__title {
-
   font-size: 2.5rem;
   font-weight: 400;
   padding: 1em 0;
@@ -155,20 +58,9 @@
   gap: 50px;
   padding-top: 2em;
 
-  // &:hover {
-  //   filter: blur(20px);
-  //   -webkit-filter: blur(20px);
-  //   transform: scale(0.9);
-  //   -webkit-transform: scale(0.9);
-  //   -moz-transform: scale(0.9);
-  //   -ms-transform: scale(0.9);
-  //   -o-transform: scale(0.9);
-  //   opacity: 0.5;
-  // }
 }
 
 .feature {
-  //background-color: grey;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -191,12 +83,6 @@
     background-image: linear-gradient(135deg,
         #f4e2f5 0%,
         #e6e4f8 100%);
-
-    // h3,
-    // h4,
-    // p {
-    //   color: #faf5f5;
-    // }
 
   }
 
@@ -250,9 +136,13 @@
 // Projects -------
 
 .card--project {
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-bottom: 2.4rem;
+  // text-align: right;
+
+  margin-bottom: 3rem;
+
+  &:last-child {
+    margin-bottom: 1rem;
+  }
 
   .bg-shapes {
     height: 390px;
@@ -288,7 +178,20 @@
     background-color: #e5f2f8;
   }
 
+  .bg-shape5 {
+    background-color: #cce4ea;
+  }
+
+  .bg-shape6 {
+    background-color: #f4e2f5;
+  }
+
+  .bg-shape7 {
+    background-color: #e6e4f8;
+  }
+
   .project--description {
+    text-align: right;
 
     h3 {
       text-transform: uppercase;
@@ -301,10 +204,15 @@
       font-size: 1.1rem;
     }
 
-    p {
-      width: 70%;
-      margin: auto;
-      padding-top: 1em;
+    .project-paragraph {
+
+      margin-top: 1em;
+      display: flex;
+      justify-content: flex-end;
+
+      p {
+        width: 70%;
+      }
     }
 
     a {
@@ -349,27 +257,20 @@
   //     $secondary-color 100%);
 
   background-color: #827ADD;
+  padding: 0 3rem 3rem;
 
-
-  h2 {
-    padding: 1.3em 0;
-    text-align: center;
-    color: #e6e4f8;
-  }
 
   .single__review {
     @include flexCenter(flex, row, center, center);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 1em;
 
     .review {
       min-height: 320px;
       padding: 1.8rem;
       @include flexCenter(flex, column, center, center);
       text-align: center;
-
       background-color: rgba(225, 225, 225, 0.1);
       backdrop-filter: blur (20px);
       border: rgba(225, 225, 225, 0.5);
@@ -386,8 +287,16 @@
         padding-bottom: 0.5em;
       }
 
+      h4 {
+        margin: 0;
+        padding-bottom: 0.5em;
+        font-weight: 300;
+      }
+
       p {
         padding-bottom: 1em;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
       }
 
     }

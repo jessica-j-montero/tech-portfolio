@@ -562,36 +562,28 @@ a:hover {
   width: auto;
 }
 
-.main__layout {
+.layout {
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
 }
 
-.main__content {
-  margin: 1.2rem 2rem;
-}
-
 @media (max-width: 56.25em) {
-  .main__sidebar {
+  .sidebar-box {
     display: none;
   }
 }
 @media (min-width: 56.25em) {
-  .main__layout {
+  .layout {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
   }
 
-  .main__sidebar {
-    min-width: 16vw;
+  .sidebar-box {
+    min-width: 15vw;
     border-right: 1px solid grey;
-  }
-
-  .main__content {
-    flex: 1 1 auto;
   }
 
   aside {
@@ -947,6 +939,10 @@ a:hover {
   text-align: left;
 }
 
+.main__content-1 {
+  margin: 3rem;
+}
+
 .main__title h1 {
   font-size: 4rem;
   line-height: 4rem;
@@ -957,12 +953,12 @@ a:hover {
   font-weight: 300;
   padding-bottom: 2em;
 }
-
 @media (min-width: 56.25em) {
   .main__title {
     width: 80%;
   }
 }
+
 .inner__title,
 .card__title,
 .comments__title {
@@ -1040,9 +1036,10 @@ a:hover {
 }
 
 .card--project {
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
+}
+.card--project:last-child {
+  margin-bottom: 1rem;
 }
 .card--project .bg-shapes {
   height: 390px;
@@ -1076,6 +1073,18 @@ a:hover {
 .card--project .bg-shape4 {
   background-color: #e5f2f8;
 }
+.card--project .bg-shape5 {
+  background-color: #cce4ea;
+}
+.card--project .bg-shape6 {
+  background-color: #f4e2f5;
+}
+.card--project .bg-shape7 {
+  background-color: #e6e4f8;
+}
+.card--project .project--description {
+  text-align: right;
+}
 .card--project .project--description h3 {
   text-transform: uppercase;
   font-weight: 300;
@@ -1085,10 +1094,13 @@ a:hover {
   margin: 0.2rem;
   font-size: 1.1rem;
 }
-.card--project .project--description p {
+.card--project .project--description .project-paragraph {
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+.card--project .project--description .project-paragraph p {
   width: 70%;
-  margin: auto;
-  padding-top: 1em;
 }
 .card--project .project--description a {
   margin-top: 2rem;
@@ -1117,11 +1129,7 @@ a:hover {
 
 .reviews__box {
   background-color: #827ADD;
-}
-.reviews__box h2 {
-  padding: 1.3em 0;
-  text-align: center;
-  color: #e6e4f8;
+  padding: 0 3rem 3rem;
 }
 .reviews__box .single__review {
   display: flex;
@@ -1131,7 +1139,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  padding: 1em;
 }
 .reviews__box .single__review .review {
   min-height: 320px;
@@ -1154,8 +1161,15 @@ a:hover {
   border-radius: 100%;
   padding-bottom: 0.5em;
 }
+.reviews__box .single__review .review h4 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-weight: 300;
+}
 .reviews__box .single__review .review p {
   padding-bottom: 1em;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
