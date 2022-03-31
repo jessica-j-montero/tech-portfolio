@@ -959,14 +959,6 @@ a:hover {
   }
 }
 
-.inner__title,
-.card__title,
-.comments__title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  padding: 1em 0;
-}
-
 .features,
 .card,
 .comments {
@@ -975,6 +967,20 @@ a:hover {
   min-width: 320px;
 }
 
+.inner__title,
+.card__title,
+.comments__title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 1em 0;
+}
+
+@media (max-width: 48em) {
+  .card__title {
+    padding-top: 2.1em;
+    padding-bottom: 1.4em;
+  }
+}
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -996,10 +1002,18 @@ a:hover {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
-}
-.feature:hover {
   backdrop-filter: blur();
   background-image: linear-gradient(135deg, #f4e2f5 0%, #e6e4f8 100%);
+}
+@media (min-width: 56.25em) {
+  .feature {
+    backdrop-filter: none;
+    background-image: none;
+  }
+  .feature:hover {
+    backdrop-filter: blur();
+    background-image: linear-gradient(135deg, #f4e2f5 0%, #e6e4f8 100%);
+  }
 }
 .feature__circle {
   position: relative;
@@ -1029,10 +1043,30 @@ a:hover {
 }
 .feature__content {
   position: relative;
-  bottom: 220px;
-  padding: 20px;
+  padding: 3em;
+  bottom: 15rem;
   text-align: center;
   z-index: -20;
+}
+.feature__content h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+}
+.feature__content p {
+  font-size: 0.8rem;
+}
+@media (max-width: 48em) {
+  .feature__content {
+    bottom: 17rem;
+  }
+  .feature__content h3 {
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+  }
+  .feature__content p {
+    font-size: 1.2rem;
+  }
 }
 
 .card--project {
@@ -1141,7 +1175,7 @@ a:hover {
   gap: 20px;
 }
 .reviews__box .single__review .review {
-  min-height: 320px;
+  min-height: 330px;
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
@@ -1161,15 +1195,24 @@ a:hover {
   border-radius: 100%;
   padding-bottom: 0.5em;
 }
+.reviews__box .single__review .review h3 {
+  padding-top: 0.5em;
+}
 .reviews__box .single__review .review h4 {
   margin: 0;
-  padding-bottom: 0.5em;
   font-weight: 300;
+  padding-bottom: 0.5em;
 }
 .reviews__box .single__review .review p {
   padding-bottom: 1em;
   font-size: 0.9rem;
   line-height: 1.1rem;
+  padding: 0 1.2em 1.5em;
+}
+@media (max-width: 48em) {
+  .reviews__box .single__review .review p {
+    font-size: 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
