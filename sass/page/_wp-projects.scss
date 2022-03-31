@@ -12,10 +12,14 @@
 
 // All title
 .main__title {
+
+  padding-top: 4em;
+  padding-bottom: 2em;
+
   h1 {
     font-size: $big-font-size;
     line-height: 4rem;
-    padding: 0.6em 0px;
+    padding-bottom: 0.6em;
   }
 
   h2 {
@@ -55,7 +59,6 @@
     padding-bottom: 1.4em;
   }
 }
-
 
 
 // Workflow -------
@@ -104,7 +107,6 @@
           #e6e4f8 100%);
     }
   }
-
 
 
   &__circle {
@@ -293,10 +295,6 @@
 
 
 .reviews__box {
-  // background-image: linear-gradient(135deg,
-  //     $primary-color 0%,
-  //     $secondary-color 100%);
-
   background-color: #827ADD;
   padding: 0 3rem 3rem;
 
@@ -304,11 +302,12 @@
   .single__review {
     @include flexCenter(flex, row, center, center);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+
+    gap: 15px;
 
     .review {
-      min-height: 330px;
+      min-height: 17rem;
       padding: 1.8rem;
       @include flexCenter(flex, column, center, center);
       text-align: center;
@@ -320,8 +319,6 @@
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
-
-
 
       .review--img {
         border-radius: 100%;

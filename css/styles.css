@@ -20,7 +20,7 @@
 
 *::selection {
   color: white;
-  background-color: #330137;
+  background-color: #f4e2f5;
 }
 
 /**
@@ -568,11 +568,39 @@ a:hover {
   margin-top: 6rem;
 }
 
-@media (max-width: 56.25em) {
-  .sidebar-box {
-    display: none;
-  }
+.sidebar-box {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f6f7f9;
 }
+
+.sidebar {
+  padding: 1.5em;
+  line-height: 2rem;
+}
+.sidebar ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.sidebar li {
+  display: block;
+  border-bottom: 1px solid #e2e2e2;
+}
+.sidebar a {
+  font-size: 16px;
+  color: #2b2b2b;
+  display: block;
+  font-weight: 600;
+  padding: 15px;
+}
+.sidebar .aside-title {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 56.25em) {
   .layout {
     width: 100%;
@@ -582,14 +610,12 @@ a:hover {
   }
 
   .sidebar-box {
-    min-width: 15vw;
-    border-right: 1px solid grey;
+    flex-basis: 30vw;
   }
 
   aside {
     position: sticky;
     top: 7em;
-    background-color: #fff;
   }
 }
 .footer {
@@ -943,10 +969,14 @@ a:hover {
   margin: 3rem;
 }
 
+.main__title {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
 .main__title h1 {
   font-size: 4rem;
   line-height: 4rem;
-  padding: 0.6em 0px;
+  padding-bottom: 0.6em;
 }
 .main__title h2 {
   font-size: 1.4rem;
@@ -1171,11 +1201,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 15px;
 }
 .reviews__box .single__review .review {
-  min-height: 330px;
+  min-height: 17rem;
   padding: 1.8rem;
   display: flex;
   flex-direction: column;
