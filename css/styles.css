@@ -1032,8 +1032,6 @@ a:hover {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
-  backdrop-filter: blur();
-  background-image: linear-gradient(135deg, #f4e2f5 0%, #e6e4f8 100%);
 }
 @media (min-width: 56.25em) {
   .feature {
