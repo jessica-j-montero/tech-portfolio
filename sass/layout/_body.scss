@@ -40,8 +40,8 @@
   height: 100vh;
 
   // Tablet + desktop
-
-  @include respond(tab-port-next) {
+ // from 768 +
+  @include respond(tab-port-smNext) {
 
     grid-template:
       "nav nav"
@@ -114,51 +114,6 @@
 
   }
 }
-
-
-
-// mobile --------
-// @include respond(tab-port) {
-//   .sidebar-box {
-//     width: 80%;
-//     margin: 0 auto;
-//     background-color: #f6f7f9;
-
-
-//   }
-
-//   .sidebar {
-//     padding: 1.5em;
-//     line-height: 2rem;
-
-//     ul {
-//       display: block;
-//       margin-block-start: 1em;
-//       margin-block-end: 1em;
-//       margin-inline-start: 0px;
-//       margin-inline-end: 0px;
-//       padding-inline-start: 40px;
-//     }
-
-//     li {
-//       display: block;
-//       border-bottom: 1px solid rgb(226, 226, 226);
-//     }
-
-//     a {
-//       font-size: 16px;
-//       color: rgb(43, 43, 43);
-//       display: block;
-//       font-weight: 600;
-//       padding: 15px;
-//     }
-
-//     .aside-title {
-//       margin-bottom: 1rem;
-
-//     }
-//   }
-// }
 
 
 

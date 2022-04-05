@@ -5,10 +5,6 @@
   min-width: 320px;
   margin-top: 9em;
 
-  .header__text{
-    margin-bottom: 3.2em;
-  }
-
   &__text {
     width: 80%;
     @include flexCenter(flex, column, none, center);
@@ -16,14 +12,27 @@
     // margin: 3.1em 0;
     margin-right: auto;
     margin-left: auto;
-    line-height: 32px;
+    margin-bottom: 3.2em;
+    line-height: 2rem;
     text-align: center;
+     // tablet from 768px +
+    @include respond(tab-port-smNext){
+      position: sticky;
+      top: 3rem;
+      padding-top: 5em;
+      line-height: 2rem;
+      text-align: right;
+    }
 
     h1 {
       order: 2;
       padding-bottom: 2rem;
       font-size: $mid-font-size;
       width: max-content;
+      // tablet from 768px +
+      @include respond(tab-port-smNext){
+      width: auto;
+      }
     }
 
     h2 {
@@ -31,7 +40,6 @@
       padding-bottom: 2rem;
       font-size: $small-font-size;
       font-weight: 300;
-
 
       .skills {
         color: $primary-color;
@@ -59,42 +67,57 @@
     }
   }
 
+    // Tablet: from 768px +
 
-  // tablet
+  @include respond(tab-port-smNext) {
+      margin-top: 0.5em;
 
-  @include respond(tab-port-next) {
-    margin-top: 6em;
-    position: fixed;
-    right: 0px;
-    z-index: 10;
-
-    @include respond(tab-land-next) {
-      margin-top: 2em;
-      position: static;
-      right: 0px;
-      z-index: none;
-
-    }
-
-    h1 {
+    h1{
+      font-size: 2.5em;
       line-height: 1em;
       padding-bottom: 0.3em;
-
-
+      align-self: flex-end;
+      margin: 0;
+      padding: 0.7em 0 0.5em;
     }
 
     h2 {
       font-size: $default-font-size;
       font-weight: 200;
+      align-self: flex-end;
+      margin: 0;
 
       .skills {
-        font-size: $default-font-size;
+        font-size: 1.4rem;
+        font-weight: 600;
+    
       }
     }
 
     .header__img {
       height: 9em;
-      margin: 1.5em;
+      // margin: 1.5em;
+      margin-bottom: 0.1em;
+       align-self: flex-end;
+        margin: 0;
+    }
+  }
+
+  // Desktop: from 1200px +
+  @include respond(tab-land-next) {
+    margin-top: 0;
+    position: static;
+    right: 0px;
+    z-index: none;
+    
+    h2 {
+    line-height: 1.5rem;
+
+      .skills {
+        font-size: 1.3rem;
+        font-weight: 500;
+    
+      }
     }
   }
 
@@ -125,14 +148,16 @@
   }
 
   .main__item:hover {
+ // from 768px +
+    @include respond(tab-port-smNext) {
+      transform: translateX(1%);
+      -webkit-transform: translateX(1%);
+      -moz-transform: translateX(1%);
+      -ms-transform: translateX(1%);
+      -o-transform: translateX(1%);
+      margin-left: -0.9em;
 
-    @include respond(tab-port-next) {
-      transform: translateX(-1%);
-      -webkit-transform: translateX(-1%);
-      -moz-transform: translateX(-1%);
-      -ms-transform: translateX(-1%);
-      -o-transform: translateX(-1%);
-    }
+}
 
     @include respond(tab-land-next) {
       transform: translateX(1%);
@@ -144,33 +169,6 @@
     }
   }
 
-  // &__item-1 {
-  //   background-color: $tertiary-color;
-  // }
-
-  // &__item-2 {
-  //   background-color: $cerulean;
-
-  // }
-
-  // &__item-3 {
-  //   background-color: $secondary-color;
-
-  //   // padding: 4.2em 0;
-  // }
-
-  // &__item-4 {
-
-  //   background-color: $primary-color;
-
-  // }
-
-  // &__item-5 {
-  //   background-color: $cerulean;
-
-  //   background-color: $carnation-pink;
-  // }
-
 
   &__item-1 {
     background-color: #C96FCD;
@@ -178,25 +176,18 @@
 
   &__item-2 {
     background-color: #827ADD;
-
   }
 
   &__item-3 {
     background-color: #0080D8;
-
   }
 
   &__item-4 {
-
     background-color: #0080BF;
-
-
-
   }
 
   &__item-5 {
     background-color: #007A98;
-
   }
 
 
