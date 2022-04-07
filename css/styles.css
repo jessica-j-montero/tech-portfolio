@@ -1269,4 +1269,55 @@ a:hover {
   }
 }
 
+.front-body {
+  background-image: linear-gradient(to right top, #6008f7, #6d2ceb, #7640de, #7e50d2, #845ec5);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.frontend-container {
+  height: 50vh;
+  width: 50vh;
+}
+.frontend-container__title {
+  padding: 1.8em 0 2em;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+}
+.frontend-container__title h1 {
+  color: antiquewhite;
+  opacity: 1;
+  animation: typedjsBlink 2.5s infinite;
+  -webkit-animation: typedjsBlink 2.5s infinite;
+  animation: typedjsBlink 2.5s infinite;
+}
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.frontend-container__text h2 {
+  font-weight: 200;
+  line-height: 3rem;
+  color: antiquewhite;
+}
+.frontend-container__text h2:hover {
+  color: #D65DB1;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=styles.css.map */

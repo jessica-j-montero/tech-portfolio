@@ -1,0 +1,50 @@
+@use "../abstracts/_variables.scss"as *;
+@use "../abstracts/_mixins.scss"as *;
+
+.front-body{
+background-image: linear-gradient(to right top, #6008f7, #6d2ceb, #7640de, #7e50d2, #845ec5);
+height: 100vh;
+@include flexCenter(flex, row, center, center);
+
+}
+
+.frontend-container{
+  height: 50vh;
+  width: 50vh;
+
+
+  &__title{
+    padding: 1.8em 0 2em;
+    line-height: 2.4rem;
+    font-size: $default-font-size;
+    h1{
+    color: antiquewhite;
+    opacity: 1;
+    animation: typedjsBlink 2.5s infinite;
+    -webkit-animation: typedjsBlink 2.5s infinite;
+    animation: typedjsBlink 2.5s infinite;
+    @keyframes typedjsBlink{
+      50% { opacity: 0.0; }
+    }
+    @-webkit-keyframes typedjsBlink{
+      0% { opacity: 1; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1; }
+    }
+    }
+
+  }
+
+  &__text h2{
+    font-weight: 200;
+    line-height: 3rem;
+    color: antiquewhite;
+  
+      
+
+    &:hover{
+    color: #D65DB1;
+    font-weight: 500;
+}
+  }
+}
