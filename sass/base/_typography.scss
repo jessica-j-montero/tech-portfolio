@@ -3,19 +3,24 @@
 
 
 
+
+h1,
+h2{
+  font-family: 'Jost', sans-serif;
+}
+
 h1 {
   font-weight: 600;
   color: $sweet-black;
 }
 
-p,
-a,
-h2,
+
 h3,
-h4 {
+h4,
+p,
+a {
   font-family: 'Nunito', sans-serif;
   color: $sweet-black;
-
 }
 
 a,

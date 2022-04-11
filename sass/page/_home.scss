@@ -44,8 +44,9 @@
       .skills {
         color: $primary-color;
         display: block;
-        padding-top: 0.2em;
+        padding-top: 0.4em;
         padding-bottom: 1em;
+        font-family: 'Jost', sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         font-size: 1.7rem;
@@ -147,6 +148,9 @@
     }
   }
 
+
+
+
   .main__item:hover {
  // from 768px +
     @include respond(tab-port-smNext) {
@@ -157,7 +161,10 @@
       -o-transform: translateX(1%);
       margin-left: -0.9em;
 
+  
 }
+
+
 
     @include respond(tab-land-next) {
       transform: translateX(1%);
@@ -192,7 +199,7 @@
 
 
 
-  // DESKTOP
+  // Desktop: from 1200px +
   @include respond(tab-land-next) {
 
     display: grid;
@@ -210,6 +217,11 @@
       height: 80%;
     }
 
+     &__item-2{
+    .item-2-title{
+      padding-top: 1.7em;
+    }
+  }  
   }
 
 }
