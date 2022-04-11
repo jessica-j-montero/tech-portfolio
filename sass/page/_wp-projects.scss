@@ -300,6 +300,9 @@
   background-color: #827ADD;
   padding: 0 3rem 3rem;
 
+  .card__title{
+    color: $just-white;
+  }
 
   .single__review {
     @include flexCenter(flex, row, center, center);
@@ -313,6 +316,7 @@
       padding: 1.8rem;
       @include flexCenter(flex, column, center, center);
       text-align: center;
+     
       background-color: rgba(225, 225, 225, 0.1);
       backdrop-filter: blur (20px);
       border: rgba(225, 225, 225, 0.5);
@@ -322,6 +326,7 @@
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
 
+
       .review--img {
         border-radius: 100%;
         padding-bottom: 0.5em;
@@ -329,12 +334,14 @@
 
       h3 {
         padding-top: 0.5em;
+         color: $just-white;
       }
 
       h4 {
         margin: 0;
         font-weight: 300;
         padding-bottom: 0.5em;
+         color: $just-white;
       }
 
       p {
@@ -342,6 +349,7 @@
         font-size: 0.9rem;
         line-height: 1.1rem;
         padding: 0 1.2em 1.5em;
+         color: $just-white;
       }
 
       // from 0px to 768px

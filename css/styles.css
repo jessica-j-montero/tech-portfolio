@@ -1219,6 +1219,9 @@ a:hover {
   background-color: #827ADD;
   padding: 0 3rem 3rem;
 }
+.reviews__box .card__title {
+  color: #fff;
+}
 .reviews__box .single__review {
   display: flex;
   flex-direction: row;
@@ -1251,17 +1254,20 @@ a:hover {
 }
 .reviews__box .single__review .review h3 {
   padding-top: 0.5em;
+  color: #fff;
 }
 .reviews__box .single__review .review h4 {
   margin: 0;
   font-weight: 300;
   padding-bottom: 0.5em;
+  color: #fff;
 }
 .reviews__box .single__review .review p {
   padding-bottom: 1em;
   font-size: 0.9rem;
   line-height: 1.1rem;
   padding: 0 1.2em 1.5em;
+  color: #fff;
 }
 @media (max-width: 48em) {
   .reviews__box .single__review .review p {
