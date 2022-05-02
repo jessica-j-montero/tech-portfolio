@@ -658,7 +658,7 @@ a:hover {
 }
 @media (min-width: 56.25em) {
   .nav {
-    height: 3em;
+    height: 4em;
   }
 }
 
@@ -669,26 +669,26 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   height: 3em;
+  font-weight: 400;
 }
 .nav__container .nav--logo {
   height: 3.8rem;
-  width: 3.8rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.nav__container .nav--logo img {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+.nav__container .nav--logo .nav--ankor {
+  font-weight: bolder;
+  font-size: 1.5em;
 }
 @media (min-width: 56.25em) {
-  .nav__container .nav--logo img {
-    height: 2.2em;
+  .nav__container .nav--logo .nav--ankor {
+    font-size: 1.2em;
   }
+}
+.nav__container .nav--logo .nav--ankor span {
+  padding-right: 0.3em;
 }
 @media (max-width: 56.25em) {
   .nav__container .navbar .nav-toggle {
@@ -698,13 +698,6 @@ a:hover {
     line-height: 60px;
     color: #1d1d1f;
     cursor: pointer;
-  }
-  .nav__container .navbar .nav-toggle .fas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.8rem;
   }
   .nav__container .navbar .navbar--list {
     display: flex;
@@ -719,7 +712,6 @@ a:hover {
     width: 100%;
     letter-spacing: 0.1rem;
     color: white;
-    background-color: black;
     height: calc(100% - 50px);
     /* In case we need a scroll */
     overflow-y: auto;
@@ -729,6 +721,7 @@ a:hover {
   }
   .nav__container .navbar .navbar--visible {
     left: 0;
+    background-color: #827add;
   }
   .nav__container .navbar .navbar--item {
     width: 100%;
@@ -737,14 +730,11 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 4.7em;
-    border-bottom: 1px solid #c3c3c3;
+    border-bottom: 1px solid #fff;
     width: 60%;
     font-size: 1rem;
   }
   .nav__container .navbar .navbar--item a {
-    color: #d9d9d9;
-  }
-  .nav__container .navbar .navbar--item a:hover {
     color: #fff;
   }
 }
@@ -769,7 +759,6 @@ a:hover {
     position: relative;
     font-weight: 400;
     color: #1d1d1f;
-    color: #000;
   }
   .nav__container .navbar .navbar--list .navbar--link:hover {
     color: #c96fcd;
@@ -840,11 +829,6 @@ a:hover {
   font-size: 3rem;
   width: max-content;
 }
-@media (min-width: 48em) {
-  .header__text h1 {
-    width: auto;
-  }
-}
 .header__text h2 {
   order: 3;
   padding-bottom: 2rem;
@@ -878,8 +862,7 @@ a:hover {
     margin-top: 0.5em;
   }
   .header h1 {
-    font-size: 2.5em;
-    line-height: 1em;
+    font-size: 2.1em;
     padding-bottom: 0.3em;
     align-self: flex-end;
     margin: 0;
@@ -897,7 +880,6 @@ a:hover {
   }
   .header .header__img {
     height: 9em;
-    margin-bottom: 0.1em;
     align-self: flex-end;
     margin: 0;
   }
@@ -1053,6 +1035,7 @@ a:hover {
 }
 
 .feature {
+  z-index: 10;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -1061,11 +1044,11 @@ a:hover {
   height: 370px;
   overflow: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 @media (min-width: 56.25em) {
   .feature {
@@ -1073,8 +1056,7 @@ a:hover {
     background-image: none;
   }
   .feature:hover {
-    backdrop-filter: blur();
-    background-image: linear-gradient(135deg, #f4e2f5 0%, #e6e4f8 100%);
+    background: linear-gradient(135deg, #f4e2f5 0%, #e6e4f8 100%);
   }
 }
 .feature__circle {
@@ -1082,26 +1064,19 @@ a:hover {
   top: 0px;
   width: 100%;
   height: 100%;
+  background-color: #827ADD;
   clip-path: circle(100px at center 0);
   text-align: center;
-  padding-top: 30px;
+  padding-top: 15px;
   z-index: -10;
   transition: 1s;
 }
-.feature__circle .feature__span {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 300;
+.feature__circle .circle-img {
+  display: flex;
+  justify-content: center;
 }
-.feature .circle-1,
-.feature .circle-3,
-.feature .circle-5 {
-  background-color: #827ADD;
-}
-.feature .circle-2,
-.feature .circle-4,
-.feature .circle-6 {
-  background-color: #000;
+.feature .circle-3 {
+  background-color: #c96fcd;
 }
 .feature__content {
   position: relative;
@@ -1111,8 +1086,8 @@ a:hover {
   z-index: -20;
 }
 .feature__content h3 {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 500;
   margin-bottom: 0.6rem;
 }
 .feature__content p {

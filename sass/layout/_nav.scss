@@ -25,7 +25,7 @@
 
   //  tablet+ Desktop
   @include respond(tab-port-next) {
-    height: 3em;
+    height: 4em;
   }
 }
 
@@ -34,22 +34,24 @@
   width: 90%;
   @include flexCenter(flex, row, space-between, center);
   height: 3em;
+ 
+  font-weight: 400;
 
   // left side
   .nav--logo {
     height: 3.8rem;
-    width: 3.8rem;
+  
+    // width: 3.8rem;
+    
     @include flexCenter(flex, row, center, center);
-
-    img {
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-
-      @include respond(tab-port-next) {
-        height: 2.2em;
+    .nav--ankor{
+      font-weight: bolder;
+      font-size:1.5em;
+      @include respond(tab-port-next){
+         font-size:1.2em;
+      }
+      span{
+        padding-right: 0.3em;
       }
     }
 
@@ -69,12 +71,6 @@
         line-height: 60px;
         color: $warm-black;
         cursor: pointer;
-
-        .fas {
-          @include flexCenter(flex, row, center, center);
-          font-size: 2.8rem;
-        }
-
       }
 
       .navbar--list {
@@ -92,7 +88,6 @@
         // font-size: 1rem;
         letter-spacing: 0.1rem;
         color: white;
-        background-color: black;
         height: calc(100% - 50px);
         /* In case we need a scroll */
         overflow-y: auto;
@@ -103,22 +98,23 @@
 
       .navbar--visible {
         left: 0;
+        background-color: $secondary-color;
+       
       }
 
       .navbar--item {
         width: 100%;
         @include flexCenter(flex, row, center, center);
         height: 4.7em;
-        border-bottom: 1px solid $strong-grey;
+        border-bottom: 1px solid $just-white;
         width: 60%;
         font-size: 1rem;
-
+     
         a {
-          color: $grey;
-
-          &:hover {
-            color: $just-white;
-          }
+          color: $just-white;
+          // &:hover {
+          //   color: $just-white;
+          // }
         }
       }
 
@@ -129,6 +125,7 @@
       .nav-toggle {
         display: none;
       }
+      
 
       .navbar--list {
         @include flexCenter(flex, row, space-between, center);
@@ -144,19 +141,12 @@
 
         }
 
-        // :last-of-type doesn't work!
-        // .navbar--item:not(:last-of-type) {
-        //   padding-right: 0px;
-        // }
-
         .navbar--link {
           $default-font-size: 0.8rem;
           font-size: $default-font-size;
           position: relative;
           font-weight: 400;
-
           color: $warm-black;
-          color: #000;
         }
 
         .navbar--link {
