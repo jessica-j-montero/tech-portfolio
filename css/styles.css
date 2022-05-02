@@ -998,6 +998,7 @@ a:hover {
   font-size: 1.4rem;
   font-weight: 300;
   padding-bottom: 2em;
+  line-height: 1.4em;
 }
 @media (min-width: 56.25em) {
   .main__title {
